@@ -19,6 +19,7 @@ object ByteEncoder {
     override def encode(s: String): Array[Byte] = s.getBytes()
   }
 
+  // ev for evidence
   def apply[A](implicit ev: ByteEncoder[A]): ByteEncoder[A] = ev
 }
 
