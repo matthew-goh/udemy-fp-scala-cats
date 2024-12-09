@@ -2,6 +2,11 @@ import cats._
 import cats.implicits._
 import scala.util._
 
+// trait Monad[F[_]] extends ... {
+// def pure[A](x: A): F[A]
+// def flatMap[A, B](fa: F[A])(f: A => F[B]): F[B]
+// }
+
 // a controversial Monad - it can break one of the laws
 // should have pure(x).flatMap(f) === f(x)
 // this example is ok
