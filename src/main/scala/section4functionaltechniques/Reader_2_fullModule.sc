@@ -106,4 +106,4 @@ def openAccount(accountId: Long, ownerId: Long): Reader[Env, Account] = // could
   } yield newAccount
 
 // 8. Run the function using the live environment
-openAccount(1, 1).run(liveEnv)
+openAccount(accountId = 1, ownerId = 1).run(liveEnv)
